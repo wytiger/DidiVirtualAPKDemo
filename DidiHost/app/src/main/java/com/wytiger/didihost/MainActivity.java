@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
                     PluginManager.getInstance(MainActivity.this).loadPlugin(plugin);
 
                     Intent intent = new Intent();
-                    intent.setClassName("com.wytiger.didiplugin", "com.wytiger.didiplugin.MainActivity");
+                    intent.setClassName("com.wytiger.didiplugin", "com.wytiger.didiplugin.PluginActivity");
                     startActivity(intent);
                 }catch (Exception e){
                     e.printStackTrace();
